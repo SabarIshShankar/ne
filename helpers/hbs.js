@@ -20,9 +20,18 @@ module.exports = {
   editIcon: function (storyUser, loggedUser, storyId, floating = true) {
     if (storyUser._id.toString() == loggedUser._id.toString()) {
       if (floating) {
-        return `<a href="/stories/edit/${storyId}" class="btn-floating halfway-fab blue"><i class="fas fa-edit fa-small"></i></a>`
+        return `<a href="/stories/edit/${storyId}" class="btn-floating halfway-fab blue">
+				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" rx="5" fill="white"/>
+<path d="M7 27.7924V33H12.2076L27.5666 17.641L22.359 12.4334L7 27.7924ZM31.5938 13.6138C32.1354 13.0722 32.1354 12.1973 31.5938 11.6557L28.3443 8.40619C27.8027 7.8646 26.9278 7.8646 26.3862 8.40619L23.8449 10.9475L29.0525 16.1551L31.5938 13.6138V13.6138Z" fill="#AD90FF"/>
+</svg></a>`
       } else {
-        return `<a href="/stories/edit/${storyId}"><i class="fas fa-edit"></i></a>`
+        return `<a href="/stories/edit/${storyId}">
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" rx="5" fill="#5F509B"/>
+<path d="M7 27.7924V33H12.2076L27.5666 17.641L22.359 12.4334L7 27.7924ZM31.5938 13.6138C32.1354 13.0722 32.1354 12.1973 31.5938 11.6557L28.3443 8.40619C27.8027 7.8646 26.9278 7.8646 26.3862 8.40619L23.8449 10.9475L29.0525 16.1551L31.5938 13.6138V13.6138Z" fill="white"/>
+</svg>
+</a>`
       }
     } else {
       return ''
