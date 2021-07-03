@@ -3,9 +3,10 @@ p {
 }
 
 .login-container {
-  width: 400px;
-  margin-top: 50px;
+  width: 350px;
   text-align: center;
+	font-family: DM Sans;
+	border-radius: 20px;
 }
 
 .fa-small {

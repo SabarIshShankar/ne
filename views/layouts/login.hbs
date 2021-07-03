@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.3/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
-    <title>StoryBooks Login</title>
+    <title>Login - Minutes</title>
 </head>
+    <style>
+        p {
+  margin: 10px 0 !important;
+}
 
-<body>
-    <div class="container login-container">
-        <div class="card">
-            <div class="card-content">
+.login-container {
+  width: 350px;
+  text-align: center;
+	font-family: DM Sans;
+	border-radius: 20px;
+}
+
+.fa-small {
+  font-size: 16px !important;
+}
+
+.btn-float {
+  float: left;
+  margin-right: 10px;
+}
+
+.img-small {
+  width: 180px;
+}
+
+    </style>
+<body class="flex h-screen bg-indigo-200">
+    <div class="w-full max-w-xs m-auto bg-indigo-100 rounded p-5">
+        <div class="">
+            <div class="">
                 {{{body}}}
             </div>
+                    <a class="text-grey-700 hover:text-blue-700 text-sm float-left" href="#">trueblueidea.com</a>
+        <a class="text-grey-500 hover:text-blue-700 text-sm float-right" href="#">blog</a>
         </div>
     </div>
 
