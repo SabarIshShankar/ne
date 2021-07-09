@@ -15,6 +15,9 @@ const StorySchema = new mongoose.Schema({
     default: 'public',
     enum: ['public', 'private'],
   },
+	likes: {
+		type: Number,
+	},
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',

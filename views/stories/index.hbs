@@ -70,6 +70,7 @@ background: linear-gradient(90deg, rgba(219,143,173,1) 0%, rgba(177,98,255,1) 10
 
 <h5>Stories</h5>
 
+
 <div class="row">
     {{#each stories}}
     <div class="col s12">
@@ -99,12 +100,16 @@ background: linear-gradient(90deg, rgba(219,143,173,1) 0%, rgba(177,98,255,1) 10
 							
 				<a href="/stories/{{_id}}"><button type="button"  class="button button2 w3-right" >Read more</button></a>
 
+
+				
+
 						</div>
             </div>
 
 						
         </div>
     </div>
+
     {{else}}
     <p>No stories to display</p>
     {{/each}}
@@ -129,5 +134,8 @@ background: linear-gradient(90deg, rgba(219,143,173,1) 0%, rgba(177,98,255,1) 10
 					shareDialog.classList.add('is-open');
 				}
 			});
+
+
+		
 </script>
-`
+
