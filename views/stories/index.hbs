@@ -25,7 +25,7 @@
 		box-shadow: 0;
 	}
 	.bhr{
-  border: 0.6px solid linear-gradient(90deg, rgba(177,98,255,1) 0%, rgba(255,155,99,1) 100%);;
+  border: linear-gradient(45deg, #d8cee6, #fff5ff);
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -45,8 +45,8 @@ background: linear-gradient(90deg, rgba(177,98,255,1) 0%, rgba(219,143,173,1) 10
 		margin: 4px 2px;
 		transition-duration: 0.4s;
 		cursor: pointer;
-				box-shadow:  5px 5px 26px #d9d9d9,
-             -5px -5px 26px #ffffff;
+box-shadow:  20px -20px 60px #ad8b8f,
+             -20px 20px 60px #ffffff;
 	}
 
 	.button2 {
@@ -57,7 +57,7 @@ background: linear-gradient(90deg, rgba(177,98,255,1) 0%, rgba(219,143,173,1) 10
 		font-family: DM Sans;
 		font-weight: light;
 		border-radius: 3px;
-		box-shadow:  5px 5px 26px #d9d9d9,
+box-shadow:  5px 5px 26px #cfc8d9,
              -5px -5px 26px #ffffff;
 
 	}
@@ -65,9 +65,8 @@ background: linear-gradient(90deg, rgba(177,98,255,1) 0%, rgba(219,143,173,1) 10
 	.button2:hover {
 		background: rgb(219,143,173);
 background: linear-gradient(90deg, rgba(219,143,173,1) 0%, rgba(177,98,255,1) 100%);
-		color: black;
-		box-shadow:  -5px 5px 26px #d9d9d9,
-             5px -5px 26px #ffffff;
+box-shadow:  5px 5px 26px #cfc8d9,
+             -5px -5px 26px #ffffff;
 
 	}
 	body{
@@ -79,6 +78,11 @@ background: #f3ebff;
 box-shadow:  5px 5px 26px #cfc8d9,
              -5px -5px 26px #ffffff;
 	}
+	.padding{
+		padding: 5px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 
 </style>
@@ -88,7 +92,7 @@ box-shadow:  5px 5px 26px #cfc8d9,
 
 <div class="row">
     {{#each stories}}
-    <div class="col s12">
+    <div class="s12">
         <div class="card">
 					
 					
@@ -106,12 +110,12 @@ box-shadow:  5px 5px 26px #cfc8d9,
 
 </div>
 <hr class="bhr">
-							<div class="chip">
+							<div class="card padding">
                 <h5>{{title}}</h5>
                 <p>{{stripTags (truncate body 150)}}</p>
-								
-                <hr class="bhr">
 								</div>
+                <hr class="bhr">
+								
 								<div class="w3-row w3-center ">
 
 							
